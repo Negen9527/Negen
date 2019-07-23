@@ -1,9 +1,11 @@
 ---
 ---
+
 @mixin font-size($size) {
   font-size: $size;
   font-size: calculateRem($size);
 }
+
 @mixin transition($args...) {
   -webkit-transition: $args;
   -moz-transition: $args;
@@ -17,7 +19,7 @@
 //********************************************************
 
 // Several accent colors, choose one or create your own!
-$accent-color: #3CA2A2;    // original =)
+$accent-color: #3CA2A2; // original =)
 //$accent-color: #C38FD6;  // velvet
 //$accent-color: #8FD6B3;  // greenish
 //$accent-color: #35B4DE;  // bluish
@@ -40,6 +42,7 @@ body {
   color: $font-color;
   background: $background-color url(pics/background/#{$background-pattern});
 }
+
 .card {
   background-color: $post-panel-color;
   box-shadow: 0 0 0 0, 0 8px 16px rgba(0, 0, 0, 0.2);
@@ -47,16 +50,34 @@ body {
   padding: 20px;
   font-size: 14px;
 }
+
 .main-page {
   width: 75%;
 }
 
-h1 { font-size: 2em; }
-h2 { font-size: 1.5em; }
-h3 { font-size: 1.17em; }
-h4 { font-size: 1.12em; }
-h5 { font-size: .83em; }
-h6 { font-size: .75em; }
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1.17em;
+}
+
+h4 {
+  font-size: 1.12em;
+}
+
+h5 {
+  font-size: .83em;
+}
+
+h6 {
+  font-size: .75em;
+}
 
 img {
   display: inline-block;
@@ -102,11 +123,10 @@ ul.social-media {
   }
 }
 
-
 //********************************************************
 //                    Share
 //********************************************************
-.share-bar{
+.share-bar {
   text-align: right;
 }
 
@@ -134,26 +154,50 @@ ul.share-buttons {
   }
 
   // Square frame
-  li.share-facebook .fa-square { color: #3B5998;}
-  li.share-twitter .fa-square { color: #55acee;}
-  li.share-google-plus .fa-square { color: #dd4b39;}
-  li.share-linkedin .fa-square { color: #4875B4;}
-  li.share-pinterest .fa-square { color: #BD081C;}
-  li.share-envelope .fa-square { color: #3B5998;}
+  li.share-facebook .fa-square {
+    color: #3B5998;
+  }
+  li.share-twitter .fa-square {
+    color: #55acee;
+  }
+  li.share-google-plus .fa-square {
+    color: #dd4b39;
+  }
+  li.share-linkedin .fa-square {
+    color: #4875B4;
+  }
+  li.share-pinterest .fa-square {
+    color: #BD081C;
+  }
+  li.share-envelope .fa-square {
+    color: #3B5998;
+  }
   // Circle frame
-  li.share-facebook .fa-circle { color: #3B5998;}
-  li.share-twitter .fa-circle { color: #55acee;}
-  li.share-google-plus .fa-circle { color: #dd4b39;}
-  li.share-linkedin .fa-circle { color: #4875B4;}
-  li.share-pinterest .fa-circle { color: #BD081C;}
-  li.share-envelope .fa-circle { color: #3B5998;}
+  li.share-facebook .fa-circle {
+    color: #3B5998;
+  }
+  li.share-twitter .fa-circle {
+    color: #55acee;
+  }
+  li.share-google-plus .fa-circle {
+    color: #dd4b39;
+  }
+  li.share-linkedin .fa-circle {
+    color: #4875B4;
+  }
+  li.share-pinterest .fa-circle {
+    color: #BD081C;
+  }
+  li.share-envelope .fa-circle {
+    color: #3B5998;
+  }
 
   li:hover {
-    -webkit-transform: scale(1.3,1.3);
-    -moz-transform: scale(1.3,1.3);
-    -ms-transform: scale(1.3,1.3);
-    -o-transform: scale(1.3,1.3);
-    transform: scale(1.3,1.3);
+    -webkit-transform: scale(1.3, 1.3);
+    -moz-transform: scale(1.3, 1.3);
+    -ms-transform: scale(1.3, 1.3);
+    -o-transform: scale(1.3, 1.3);
+    transform: scale(1.3, 1.3);
   }
 }
 
@@ -164,6 +208,7 @@ ul.share-buttons {
   margin-top: .7em;
   line-height: 1em;
 }
+
 ul.sideBarTags {
   list-style: none;
   li:before {
@@ -181,6 +226,7 @@ h2.post-title {
   padding-top: 10px;
   text-align: left;
 }
+
 div.post-meta {
   border-width: 1px 0;
   border-color: #666666;
@@ -200,6 +246,7 @@ div.post-meta {
     display: inline;
   }
 }
+
 .post-footer {
   height: 40px;
   display: table;
@@ -212,14 +259,14 @@ div.post-meta {
 //********************************************************
 //                    Note / Warning
 //********************************************************
-blockquote{
+blockquote {
   border-left: 2px solid #666;
   padding-left: 20px;
   font-style: italic;
 }
 
 blockquote.note p,
-blockquote.warning p{
+blockquote.warning p {
   height: 48px;
   vertical-align: middle;
   padding: 10px;
@@ -228,20 +275,22 @@ blockquote.warning p{
 
 .note {
   font-style: normal;
-  position:relative;
+  position: relative;
   border: 0;
   padding-left: 30px;
 }
+
 .note:before {
   font-style: normal;
   content: "\f06a";
   font-size: 2em;
   font-family: FontAwesome;
   left: 0;
-  position:absolute;
+  position: absolute;
   top: 0;
   color: $note-color;
 }
+
 .warning:before {
   content: "\f071";
   color: $warning-color;
@@ -259,9 +308,9 @@ nav {
   border-top: 3px #3CA2A2 solid;
   border-bottom: 1px #000000 solid;
   .navbar-brand, .nav-link {
-   color: #777;
-   @include transition(color 0.31s);
-   transition: all .7s ease;
+    color: #777;
+    @include transition(color 0.31s);
+    transition: all .7s ease;
   }
   .navbar-brand:hover, .nav-link:hover {
     color: white !important;
@@ -353,23 +402,26 @@ table.inner-borders {
   position: absolute;
 }
 
-.box h3{
-	text-align:center;
-	position:relative;
-	top:80px;
+.box h3 {
+  text-align: center;
+  position: relative;
+  top: 80px;
 }
+
 .box {
-	width:70%;
-	height:200px;
-	background:#FFF;
-	margin:40px auto;
+  width: 70%;
+  height: 200px;
+  background: #FFF;
+  margin: 40px auto;
 }
-.wrapper{
+
+.wrapper {
   padding-top: 80px;
   min-height: 100%;
   position: relative;
 }
-.content{
+
+.content {
   padding-bottom: 250px;
 }
 
@@ -382,7 +434,6 @@ table.inner-borders {
   padding-top: 50px;
   margin-top: -50px;
 }
-
 
 // Scrollbar
 ::-webkit-scrollbar {
@@ -401,7 +452,6 @@ table.inner-borders {
   background: #202020;
 }
 
-
 //********************************************************
 //       Custom classes to apply to block elements,
 //  more info: http://pavelmakhov.com/2015/12/images-in-jekyll
@@ -415,18 +465,19 @@ table.inner-borders {
   margin: 2px 3px;
   padding: 0px 5px;
 }
-.center-image
-{
+
+.center-image {
   margin: 0 auto;
   display: block;
 }
-.filename{
+
+.filename {
   background-color: #292929;
   color: lightgrey;
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
   margin: 0;
-  font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
   border-left: 0;
   bottom: -2px;
   position: relative;
